@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FocusTube",
+  "version": "1.0.0",
+  "description": "Hide YouTube distractions (feed, recommendations, comments, Shorts) and keep only the video you are watching.",
+  "permissions": ["storage"],
+  "action": { "default_popup": "popup.html", "default_title": "FocusTube" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

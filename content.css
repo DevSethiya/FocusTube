@@ -1,0 +1,26 @@
+
+/* Home feed */
+html.fg-hideHome ytd-browse[page-subtype="home"] ytd-rich-grid-renderer { display: none !important; }
+
+/* Recommended videos next to the player */
+html.fg-hideRecs ytd-watch-flexy #secondary,
+html.fg-hideRecs ytd-watch-flexy #related { display: none !important; }
+
+/* Comments */
+html.fg-hideComments ytd-comments#comments { display: none !important; }
+
+/* Shorts shelves and menu entries  */
+html.fg-hideShorts ytd-rich-shelf-renderer[is-shorts],
+html.fg-hideShorts ytd-reel-shelf-renderer,
+html.fg-hideShorts ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html.fg-hideShorts ytd-mini-guide-entry-renderer[aria-label="Shorts"] { display: none !important; }
+
+/* Left sidebar / menu  */
+html.fg-hideSidebar tp-yt-app-drawer,
+html.fg-hideSidebar ytd-mini-guide-renderer,
+html.fg-hideSidebar #guide-button { display: none !important; }
+
+/* Video end-screen suggestions */
+html.fg-hideEndCards .ytp-ce-element,
+html.fg-hideEndCards .ytp-endscreen-content,
+html.fg-hideEndCards .ytp-ce-covering-overlay { display: none !important; }
